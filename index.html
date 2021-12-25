@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Business Card</title>
+</head>
+
+<style>
+    .card {
+        position: relative;
+        height: 400px;
+        width: 300px;
+        background-color: lightgray;
+        margin: 60px auto;
+        border-radius: 5px;
+    }
+
+    .header {
+        position: absolute;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 220px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: gray;
+    }
+
+    .header img {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        left: 90px;
+        top: 22px;
+    }
+
+    .header h3 {
+        position: absolute;
+        font-family: sans-serif;
+        color: white;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 118px;
+        left: 40px;
+    }
+
+    .header p {
+        position: absolute;
+        font-family: sans-serif;
+        color: rgb(236, 233, 233);
+        font-size: 13px;
+        top: 166px;
+        left: 90px;
+    }
+
+    .body {
+        position: absolute;
+        height: 150px;
+        border-radius: 5px;
+        left: 5px;
+        right: 5px;
+        top: 58%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .body ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+
+
+    .body ul li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        border-radius: 5px;
+        height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .body ul li p,
+    h3,
+    i {
+        position: absolute;
+    }
+
+
+    .body ul li h3 {
+        top: -17px;
+        left: 58px;
+        color: #576574;
+    }
+
+
+    .body ul li p {
+        top: 14px;
+        left: 59px;
+        font-size: 12px;
+        font-family: sans-serif;
+        color: #576574;
+    }
+
+
+    .body ul li i {
+        left: 8px;
+        top: 7px;
+        color: #16a085;
+        font-size: 26px;
+    }
+
+    .body ul li:nth-child(1) {
+        top: -16px;
+    }
+
+    .body ul li:nth-child(2) {
+        top: 26px;
+    }
+
+    .body ul li:nth-child(3) {
+        top: 68px;
+    }
+
+    .body ul li:nth-child(1)i {
+        top: 12px;
+    }
+
+    .body li:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="header">
+            <img src="https://i.ibb.co/R6BjWsc/157kb.jpg">
+            <h3>Alamgir Hossain</h3>
+            <p>Frontend Web Developer</p>
+        </div>
+        <div class="body">
+            <ul>
+                <li>
+                    <h3>8801822773541</h3>
+                    <p>Mobile Number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3>alamgirjuab@gmail.com</h3>
+                    <p>Email Address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <h3>www.alamgir.com</h3>
+                    <p>Web Address</p>
+                    <i class="fas fa-globe-americas"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
